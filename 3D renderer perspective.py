@@ -127,6 +127,10 @@ while running:
         camera_pos.z -= speed
     if keys[pygame.K_DOWN]:
         camera_pos.z += speed
+    if keys[pygame.K_SPACE]:
+        camera_pos.y += speed
+    if keys[pygame.K_LCTRL]:
+        camera_pos.y -= speed
 
     for object in objects:
         object.Draw()
